@@ -31,3 +31,4 @@ allow wlan_assistant init:unix_stream_socket connectto;
 allow wlan_assistant property_socket:sock_file write;
 
 set_prop(wlan_assistant, mtk_nvram_ready_prop)
+get_prop(wlan_assistant, service_nvram_init_prop)
