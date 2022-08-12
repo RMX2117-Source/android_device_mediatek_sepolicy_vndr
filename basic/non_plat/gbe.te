@@ -1,4 +1,0 @@
-type gbe_native, domain;
-type gbe_native_exec, exec_type, file_type, vendor_file_type;
-
-init_daemon_domain(gbe_native)

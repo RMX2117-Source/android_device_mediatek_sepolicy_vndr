@@ -381,3 +381,6 @@ vendor_restricted_prop(debug_hwc_prop)
 
 # MIPC
 vendor_restricted_prop(mtk_mipc_support_prop)
+
+# GBE
+vendor_restricted_prop(vendor_mtk_gbe_prop)
