@@ -64,3 +64,6 @@ hal_client_domain(mtk_hal_c2, hal_power)
 
 # Allow C2 hal to get render_prop
 get_prop(mtk_hal_c2, render_prop)
+
+# Allow C2 hal to get mtk_pq_ro_prop
+get_prop(mtk_hal_c2, mtk_pq_ro_prop)
