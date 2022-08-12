@@ -580,6 +580,7 @@
 /(system\/vendor|vendor)/bin/stroke  u:object_r:vendor_stroke_exec:s0
 /(system\/vendor|vendor)/bin/sh   u:object_r:vendor_shell_exec:s0
 /(system\/vendor|vendor)/bin/vpud  u:object_r:vpud_native_exec:s0
+/(system\/vendor|vendor)/bin/bip_ap u:object_r:bip_ap_exec:s0
 
 # Google Trusty system files
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service\.trusty u:object_r:hal_keymaster_default_exec:s0

@@ -1,0 +1,18 @@
+type bip_ap, domain;
+type bip_ap_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(bip_ap)
+net_domain(bip_ap)
+
+allow bip_ap self:udp_socket create_socket_perms;
+allow bip_ap self:tcp_socket create_stream_socket_perms;
+allow bip_ap self:netlink_route_socket read;
+allow bip_ap self:rawip_socket { bind create getattr read setopt write };
+allow bip_ap node:udp_socket node_bind;
+allow bip_ap node:rawip_socket node_bind;
+allow bip_ap port:udp_socket name_bind;
+allow bip_ap port:tcp_socket name_connect;
+allow bip_ap ccci_device:chr_file rw_file_perms;
+
+unix_socket_connect(bip_ap, fwmarkd, netd)
+unix_socket_connect(bip_ap, netd, netd)

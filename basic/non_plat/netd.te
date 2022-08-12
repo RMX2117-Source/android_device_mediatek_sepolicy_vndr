@@ -34,3 +34,8 @@ allow netd isolated_app:fd use;
 
 # MTK support antutu feature
 get_prop(netd, mtk_antutu_prop);
+
+# Allow netd to access bip_ap daemon
+allow netd bip_ap:fd use;
+allow netd bip_ap:tcp_socket { getopt read setopt write };
+allow netd bip_ap:udp_socket { getopt read setopt write };
