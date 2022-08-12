@@ -74,7 +74,30 @@ genfscon sysfs /devices/platform/charger/ADC_Charger_Voltage u:object_r:sysfs_vb
 genfscon sysfs /devices/platform/battery/ADC_Charger_Voltage u:object_r:sysfs_vbus:s0
 genfscon sysfs /devices/platform/charger/Pump_Express u:object_r:sysfs_pump_express:s0
 genfscon sysfs /devices/platform/battery/Pump_Express u:object_r:sysfs_pump_express:s0
+
 genfscon sysfs /devices/platform/battery/power_supply/battery/present u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/battery/power_supply/battery/current_now u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/battery/power_supply/battery/cycle_count u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/battery/power_supply/battery/charge_full u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/battery/power_supply/battery/charge_full_design u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/battery/power_supply/battery/capacity u:object_r:sysfs_power_supply:s0 
+genfscon sysfs /devices/platform/battery/power_supply/battery/status u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/battery/power_supply/battery/type u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/battery/power_supply/battery/voltage_now u:object_r:sysfs_power_supply:s0
+
+genfscon sysfs /devices/platform/mt_charger/power_supply/ac/type u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/charger/type u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/charger/online u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/usb/current_max u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/usb/online u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/usb/input_current_now u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/usb/real_type u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/usb/quick_charge_type u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/usb/type u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/usb/typec_mode u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/usb/voltage_max u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/usb/voltage_now u:object_r:sysfs_power_supply:s0
+
 genfscon sysfs /devices/platform/mt-rtc/rtc    u:object_r:sysfs_rtc:s0
 genfscon sysfs /sys/class/rtc/rtc0/hctosys     u:object_r:sysfs_rtc:s0
 genfscon sysfs /devices/platform/mt-pmic u:object_r:sysfs_pmu:s0
