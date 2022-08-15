@@ -18,6 +18,7 @@ allow md_monitor storage_file:lnk_file read;
 # Purpose : Add for HIDL service
 add_hwservice(md_monitor, mtk_mdm_hidl_server)
 get_prop(md_monitor, hwservicemanager_prop)
+get_prop(md_monitor, mtk_md_prop)
 hwbinder_use(md_monitor)
 hal_server_domain(md_monitor, md_monitor_hal)
 
