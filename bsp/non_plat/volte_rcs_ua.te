@@ -22,6 +22,9 @@ allow volte_rcs_ua rcs_volte_stack:unix_stream_socket { read getattr connectto }
 # Purpose: Allow rcs ua to set rcs property
 set_prop(volte_rcs_ua, service_rcs_prop);
 
+# Allow rcs usa to get mtk rcs ua support property
+get_prop(volte_rcs_ua, mtk_rcs_ua_support_prop);
+
 # Purpose: For volte_rcs_ua to be able to talk to rcs_rild
 allow volte_rcs_ua rcs_rild_socket:sock_file { open getattr read write append };
 allow volte_rcs_ua rild:unix_stream_socket { read getattr connectto };
